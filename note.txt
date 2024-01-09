@@ -1,0 +1,30 @@
+phân tích mức lương của tập dữ liệu gồm có 100k record nhân viên
+
+framework pyspark sẽ được sử dụng để phân tích dữ liệu và trích xuất
+các thông tin bằng truy vấn sql
+
+pyspark MLlib sẽ cho sd thực hiện để train thuật toán gradient boosted tree để dư đoán mức lương của nhà tuyển dụng
+
+Phân tích dữ liệu:
+
+Ngành có thu nhập cao nhất là OIL, thứ hai là FINANCE và thứ ba là WEB.
+Đối với mỗi loại công việc, người lao động có bằng cấp cao hơn có thu nhập cao hơn.
+Công việc được trả lương cao nhất là CEO, trong khi công việc được trả lương thấp nhất là JANITOR.
+
+Đối với mọi loại công việc, Engineering, Businees and Math học là những chuyên ngành dẫn đến thu nhập cao hơn.
+Thu nhập trung bình của người lao động không có kinh nghiệm khác nhau rất nhiều giữa các loại công việc:
+		CEO có thu nhập trung bình cơ bản khoảng 120k $, CFO khoảng 110k$ trong khi Janitor chỉ 47k $.
+Trong số tất cả các công việc, mức lương trung bình, trung bình và chế độ lần lượt là 116k $, 114k  $ và 108k $. Chúng không trùng khớp do độ lệch đúng của phân phối lương.
+
+
+Dự đoán:
+
+Chúng ta có thể thấy rằng thuật toán dự đoán mức lương tốt hơn thấp hơn 130k đô la và bắt đầu giảm mức lương trên 175k  $. Điều này có thể là do độ lệch đúng của phân phối lương.
+Nhìn chung, kết quả đang thỏa mãn cả hai khía cạnh của RMSE và R2. Những cải tiến hơn nữa có thể đạt được bằng cách điều chỉnh siêu tham số thích hợp và kỹ thuật tính năng trên dữ liệu.
+
+data analysis, tiền xử lý dl (kiểm tra trùng lặp, missing value) -> Dataset Analayis
+
+Q1: Công việc nào được trả lương cao nhất?
+Q2: 20 công việc TOP 20 về mức lương cao nhất là gì?
+Q3: 
+
